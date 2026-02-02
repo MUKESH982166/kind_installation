@@ -18,3 +18,12 @@ nodes:
   - role: worker
 
 kind create cluster --config kind-config.yaml
+
+==================================
+after system reboot
+==================================
+
+systemctl restart docker
+sleep 20
+kind export kubeconfig --name kind
+kubectl get nodes
