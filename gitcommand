@@ -1,0 +1,15 @@
+#intialize git
+
+git init
+
+#Add file to stging
+git add /path
+
+#commting the file
+git commit -m "any_comment"
+
+#push file to github/remote repo
+git push origin main
+
+
+
